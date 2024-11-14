@@ -1,0 +1,18 @@
+version: 2
+
+sources:
+  - name: raw_data  
+    description: "Source schema containing raw data tables"
+    database: lab2_db 
+    schema: raw_data  
+
+    tables:
+      - name: stock_prices
+        description: "Raw stock prices table containing daily close prices for each symbol"
+        columns:
+          - name: symbol
+            description: "Stock symbol"
+          - name: date
+            description: "Trading date"
+          - name: close
+            description: "Daily closing price of the stock"

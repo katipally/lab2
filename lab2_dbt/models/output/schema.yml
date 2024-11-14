@@ -1,0 +1,31 @@
+# models/output/schema.yml
+version: 2
+
+models:
+  - name: moving_average_7d
+    description: "7-day moving average of stock prices"
+    columns:
+      - name: symbol
+        description: "Stock symbol"
+        data_tests:
+          - not_null
+      - name: date
+        description: "Trading date"
+        data_tests:
+          - not_null
+      - name: moving_average_7d
+        description: "7-day moving average of the stock's closing price"
+
+  - name: rsi_7d
+    description: "7-day Relative Strength Index (RSI) of stock prices"
+    columns:
+      - name: symbol
+        description: "Stock symbol"
+        data_tests:
+          - not_null
+      - name: date
+        description: "Trading date"
+        data_tests:
+          - not_null
+      - name: rsi_7d
+        description: "7-day RSI value for the stock, measuring price momentum"

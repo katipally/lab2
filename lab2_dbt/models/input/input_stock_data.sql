@@ -1,0 +1,1 @@
+select * from {{ source('raw_data', 'stock_prices') }}

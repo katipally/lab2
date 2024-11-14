@@ -1,0 +1,13 @@
+lab2_dbt:
+  outputs:
+    dev:
+      account: "QBB76544"
+      database: "lab2_db"
+      password: "Yashwanthreddy0@"
+      role: "ACCOUNTADMIN"
+      threads: 1
+      schema: "analytics"
+      type: "snowflake"
+      user: "katipally"
+      warehouse: "lab2"
+  target: dev

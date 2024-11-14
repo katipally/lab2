@@ -1,0 +1,18 @@
+version: 2
+
+models:
+  - name: input_stock_data
+    description: "Raw stock price data imported from the source"
+    columns:
+      - name: symbol
+        description: "Stock symbol"
+        data_tests:
+          - not_null
+      - name: date
+        description: "Trading date"
+        data_tests:
+          - not_null
+      - name: close
+        description: "Closing price of the stock"
+        data_tests:
+          - not_null
